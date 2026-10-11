@@ -645,6 +645,13 @@ function wallpaperPicker() {
     return;
   }
 
+  // SECRET 2: Hidden extra-games page
+  if (choice === "shadow777") {
+    document.getElementById("mainPage").style.display = "none";
+    document.getElementById("secretPage").style.display = "block";
+    return;
+  }
+
   let wallpapers = {
     "1": "shark.webp",
     "2": "leopard.webp",
